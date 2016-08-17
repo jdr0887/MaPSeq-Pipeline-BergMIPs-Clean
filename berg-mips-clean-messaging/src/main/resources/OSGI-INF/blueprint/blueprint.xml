@@ -14,8 +14,8 @@
   <bean id="BergMIPsCleanMessagingService" class="edu.unc.mapseq.messaging.bergmips.clean.BergMIPsCleanMessageService" init-method="start"
     destroy-method="stop" activation="eager">
     <property name="connectionFactory" ref="connectionFactory" />
-    <property name="messageListener" ref="GSCleanMessageListener" />
-    <property name="destinationName" value="queue/gs.clean" />
+    <property name="messageListener" ref="BergMIPsCleanMessageListener" />
+    <property name="destinationName" value="queue/bergmips.clean" />
   </bean>
 
 </blueprint>

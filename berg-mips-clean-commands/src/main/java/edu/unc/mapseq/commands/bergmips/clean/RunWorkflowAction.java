@@ -50,7 +50,7 @@ public class RunWorkflowAction implements Action {
         try {
             connection = connectionFactory.createConnection();
             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-            Destination destination = session.createQueue("queue/gs.clean");
+            Destination destination = session.createQueue("queue/bergmips.clean");
             MessageProducer producer = session.createProducer(destination);
             producer.setDeliveryMode(DeliveryMode.PERSISTENT);
             String format = "{\"entities\":[{\"entityType\":\"WorkflowRun\",\"name\":\"%s\"}]}";

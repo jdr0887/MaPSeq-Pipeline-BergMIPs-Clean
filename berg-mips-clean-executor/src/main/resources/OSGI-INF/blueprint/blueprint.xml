@@ -10,7 +10,7 @@
 
   <reference id="BergMIPsCleanWorkflowBeanService" interface="edu.unc.mapseq.workflow.WorkflowBeanService" component-name="BergMIPsCleanWorkflowBeanService" />
 
-  <bean id="task" class="edu.unc.mapseq.executor.gs.clean.BergMIPsCleanWorkflowExecutorTask">
+  <bean id="task" class="edu.unc.mapseq.executor.bergmips.clean.BergMIPsCleanWorkflowExecutorTask">
     <property name="workflowBeanService" ref="BergMIPsCleanWorkflowBeanService" />
     <property name="workflowName" value="BergMIPsClean" />
   </bean>
