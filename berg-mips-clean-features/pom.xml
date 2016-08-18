@@ -6,7 +6,7 @@
   </parent>
   <name>MaPSeq :: Pipelines :: BergMIPs :: Clean :: Features</name>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>edu.unc.mapseq.pipelines.gs-clean</groupId>
+  <groupId>edu.unc.mapseq.pipelines.berg-mips-clean</groupId>
   <artifactId>berg-mips-clean-features</artifactId>
   <version>0.6.4-SNAPSHOT</version>
   <packaging>pom</packaging>
