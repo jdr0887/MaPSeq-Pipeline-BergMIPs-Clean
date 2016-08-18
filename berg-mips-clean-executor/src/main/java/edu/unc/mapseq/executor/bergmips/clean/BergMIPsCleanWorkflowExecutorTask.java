@@ -70,7 +70,7 @@ public class BergMIPsCleanWorkflowExecutorTask extends TimerTask {
             Bundle bundle = bundleContext.getBundle();
             String version = bundle.getVersion().toString();
 
-            List<WorkflowRunAttempt> attempts = workflowRunAttemptDAO.findEnqueued(workflowList.get(0).getId());
+            List<WorkflowRunAttempt> attempts = workflowRunAttemptDAO.findEnqueued(workflow.getId());
 
             if (CollectionUtils.isNotEmpty(attempts)) {
 
